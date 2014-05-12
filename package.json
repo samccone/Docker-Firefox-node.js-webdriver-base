@@ -1,0 +1,6 @@
+{
+  "name": "docker-test",
+  "dependencies": {
+    "selenium-webdriver": "~2.41.0"
+  }
+}
