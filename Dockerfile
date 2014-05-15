@@ -20,6 +20,9 @@ RUN apt-get install -y -q xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyri
 # install NPM
 RUN curl --insecure https://www.npmjs.org/install.sh | clean=no sh
 
+# install selenium standalone webdriver
+RUN curl http://selenium-release.storage.googleapis.com/2.41/selenium-server-standalone-2.41.0.jar > /usr/local/bin/selenium.jar
+
 # setup our local test dir
 ADD . /var/app/test
 
